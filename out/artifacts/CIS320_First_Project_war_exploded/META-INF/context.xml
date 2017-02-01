@@ -1,0 +1,11 @@
+<Context>
+    <Resource name="jdbc/cis320"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="cis320"
+              password="AlphaZeta69"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="cis320.c9jianhtfgfm.us-west-2.rds.amazonaws.com:3306"
+              maxActive="15"
+              maxIdle="3"/>
+</Context>
