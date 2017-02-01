@@ -5,7 +5,11 @@
               username="cis320"
               password="AlphaZeta69"
               driverClassName="com.mysql.jdbc.Driver"
-              url="cis320.c9jianhtfgfm.us-west-2.rds.amazonaws.com:3306"
+              url="jdbc:mysql://cis320.c9jianhtfgfm.us-west-2.rds.amazonaws.com:3306/cis320"
               maxActive="15"
-              maxIdle="3"/>
+              maxIdle="3"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"/>
+    <ResourceLink name="jdbc/cis320"
+                  global="jdbc/cis320"
+                  type="javax.sql.DataSource" />
 </Context>
