@@ -6,6 +6,12 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" />
       </element>
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="gson-2.8.0" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.40-bin" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
