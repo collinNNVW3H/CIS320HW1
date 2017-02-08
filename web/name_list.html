@@ -34,7 +34,7 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="javascript_assignment.html">Javascript Assignment</a></li>
                 <li><a href="test_javascript.html">Test Javascript</a></li>
-                <li><a href="api/get_name_list">Name List JSON</a></li>
+                <li><a href="api/name_list_get">Name List JSON</a></li>
                 <li><a href="name_list.html">Name List</a></li>
             </ul>
         </div>
@@ -56,22 +56,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>1</td>
-            <td>Paul</td>
-            <td>Craven</td>
-            <td>paul@simpson.edu</td>
-            <td>5159611834</td>
-            <td>2005-11-10</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Sam</td>
-            <td>Simpson</td>
-            <td>sam@simpson.edu</td>
-            <td>5159611212</td>
-            <td>1908-10-05</td>
-        </tr>
+
         </tbody>
     </table>
 </div>
@@ -88,14 +73,35 @@
             <div class="modal-body">
 
                 <form id="my-form">
-                    <div class="form-group">
-                        <label for="firstName">First Name:</label>
-                        <input type="hidden" id="id" name="id" class="form-control" /><br />
-                        <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First name"/><br />
-                        <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last name"/><br />
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Email address"/><br />
-                        <input type="phone" id="phone" name="phone" class="form-control" placeholder="Phone number"/><br />
-                        <input type="birthday" id="birthday" name="birthday" class="form-control" placeholder="Birthday"/><br />
+                    <!-- See http://getbootstrap.com/css/#forms-control-validation for styling info. -->
+                    <div id="firstNameDiv" class="form-group has-feedback">
+                        <label class="control-label" for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First name" aria-describedby="firstNameStatus"/>
+                        <span id="firstNameGlyph" class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <span id="firstNameStatus" class="sr-only"></span>
+
+
+                        <label class="control-label" for="LastName">Last Name:</label>
+                        <input type="text" id="LastName" name="LastName" class="form-control" placeholder="Last name" aria-describedby="LastNameStatus"/>
+                        <span id="LastNameGlyph" class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <span id="LastNameStatus" class="sr-only"></span>
+
+
+                        <label class="control-label" for="Email">Email:</label>
+                        <input type="text" id="Email" name="Email" class="form-control" placeholder="Email" aria-describedby="EmailStatus"/>
+                        <span id="EmailGlyph" class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <span id="EmailStatus" class="sr-only"></span>
+
+                            <label class="control-label" for="Phone">Phone:</label>
+                            <input type="text" id="Phone" name="Phone" class="form-control" placeholder="Phone" aria-describedby="PhoneStatus"/>
+                            <span id="PhoneGlyph" class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span id="PhoneStatus" class="sr-only"></span>
+
+                            <label class="control-label" for="Birthday">Birthday:</label>
+                            <input type="text" id="Birthday" name="Birthday" class="form-control" placeholder="Birthday" aria-describedby="BirthdayStatus"/>
+                            <span id="BirthdayGlyph" class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span id="BirthdayStatus" class="sr-only"></span>
+
 
                     </div>
                 </form>
