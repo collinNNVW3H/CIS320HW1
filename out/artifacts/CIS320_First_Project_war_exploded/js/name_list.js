@@ -97,7 +97,15 @@ function updateTable() {
 // Put in the field used by screen readers
         //noinspection JSUnresolvedFunction
         $('firstNameStatus').val("(success)");
-        $('firstNameStatus').val("()");
+        $('firstNameStatus').val("(error)");
+        $('lastNameStatus').val("(success)");
+        $('lastNameStatus').val("(error)");
+        $('EmailStatus').val("(success)");
+        $('EmailStatus').val("(error)");
+        $('PhoneStatus').val("(success)");
+        $('PhoneStatus').val("(error)");
+        $('BirthdayStatus').val("(success)");
+        $('BirthdayStatus').val("(error)");
     }
 
     }
